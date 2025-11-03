@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Chat App with Online Status</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/@joeattardi/emoji-button@4.6.2/dist/index.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <!-- Login/Signup -->
+    <div class="form-container">
+      <h2 id="form-title">Login</h2>
+      <form id="auth-form">
+        <input type="text" id="username" placeholder="Username" required />
+        <input type="password" id="password" placeholder="Password" required />
+        <button type="submit" id="submit-btn">Login</button>
+        <p id="toggle-text">Don't have an account? <span id="toggle-link">Sign up</span></p>
+      </form>
+    </div>
+
+    <!-- Chat -->
+    <div id="chat-container" class="hidden">
+      <div class="chat-header">
+        <h2>Welcome, <span id="user-display"></span>!</h2>
+        <div id="status-indicator" class="status offline">Offline</div>
+      </div>
+      <div id="chat-box"></div>
+      <div class="chat-input-container">
+        <input type="text" id="chat-input" placeholder="Type your message..." />
+        <button id="emoji-btn">😊</button>
+        <button id="send-btn">Send</button>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html> give me backend for this code and how to run 

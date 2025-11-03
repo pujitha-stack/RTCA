@@ -1,0 +1,143 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.container {
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+.form-container h2,
+#chat-container h2 {
+  text-align: center;
+  margin: 0;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px;
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+#toggle-text {
+  text-align: center;
+  margin-top: 10px;
+}
+
+#toggle-link {
+  color: blue;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+#chat-box {
+  height: 300px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+  overflow-y: auto;
+  background: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+}
+
+.message {
+  max-width: 70%;
+  margin: 5px 0;
+  padding: 8px 12px;
+  border-radius: 10px;
+  line-height: 1.4;
+  word-wrap: break-word;
+}
+
+.message.sent {
+  align-self: flex-end;
+  background-color: #dcf8c6;
+}
+
+.message.received {
+  align-self: flex-start;
+  background-color: #e5e5ea;
+}
+
+.chat-input-container {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+#chat-input {
+  flex-grow: 1;
+  margin: 0;
+}
+
+#emoji-btn {
+  background-color: #ffc107;
+  color: black;
+  margin: 0;
+}
+
+#send-btn {
+  background-color: #4CAF50;
+  margin: 0;
+}
+
+/* Online/Offline status styles */
+.chat-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  gap: 10px;
+}
+
+.status {
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  user-select: none;
+}
+
+.status.online {
+  background-color: #4caf50;
+  color: white;
+}
+
+.status.offline {
+  background-color: #f44336;
+  color: white;
+}
