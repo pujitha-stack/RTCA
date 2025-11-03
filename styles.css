@@ -1,0 +1,14 @@
+*{box-sizing:border-box}body{font-family:Inter,system-ui,Segoe UI,Roboto,'Helvetica Neue',Arial;margin:0;background:#f5f7fb;color:#0f172a}a{color:inherit}
+.container{max-width:1000px;margin:32px auto;background:#fff;border-radius:12px;box-shadow:0 6px 24px rgba(15,23,42,0.08);overflow:hidden;display:flex;height:640px}
+.sidebar{width:320px;border-right:1px solid #eef2f7;padding:20px}
+.main{flex:1;display:flex;flex-direction:column}
+.header{padding:20px;border-bottom:1px solid #eef2f7;background:linear-gradient(90deg,#06b6d4, #06b6d4);color:#fff}
+.messages{flex:1;padding:20px;overflow:auto;background:linear-gradient(180deg,#ffffff,#f8fafc)}
+.compose{display:flex;padding:12px;border-top:1px solid #eef2f7;gap:8px}
+.input, .btn, .select{padding:10px;border-radius:8px;border:1px solid #e6edf3}
+.btn{background:#06b6d4;color:#fff;border:none;cursor:pointer}
+.user-item{padding:10px;border-radius:8px;margin-bottom:8px;border:1px solid #f1f5f9;cursor:pointer}
+.message{margin-bottom:12px;padding:10px;border-radius:8px;background:#f1f5f9}
+.message.me{background:#d1fae5;text-align:right}
+.auth-card{max-width:420px;margin:80px auto;padding:24px;background:#fff;border-radius:12px;box-shadow:0 6px 24px rgba(2,6,23,0.08)}
+small{color:#64748b}
